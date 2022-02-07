@@ -19,4 +19,4 @@ r = requests.head("https://web.archive.org/save/" + archive) # This saves to the
 print("Archived to Wayback Machine")
 
 
-exit()
+exit(
