@@ -1,6 +1,6 @@
 print("Wayback Machine CLI")
 
-archive = "https://tyler887.github.ik"
+archive = "https://tyler887.github.io"
 
 print("Calling Wayback Machine request (http)...")
 
