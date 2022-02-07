@@ -3,7 +3,7 @@ print("Wayback Machine CLI")
 archive = "https://tyler887.github.io"
 
 print("Calling Wayback Machine request (http)...")
-
+os.system("pip install --upgrade requests")
 import requests
 
 # HTTP is used to call the Internet Archive Wayback Machine servers, NOT the API!
