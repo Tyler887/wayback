@@ -1,6 +1,6 @@
 print("Wayback Machine CLI")
 import os
-archive = "https://tyler887.github.io"
+archive = "https://github.com"
 
 print("Calling Wayback Machine request (http)...")
 os.system("pip install --upgrade requests")
@@ -19,4 +19,4 @@ r = requests.head("https://web.archive.org/save/" + archive) # This saves to the
 print("Archived to Wayback Machine")
 
 
-exit(
+
