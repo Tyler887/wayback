@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Hi! Thanks for opening this issue :+1: We will get to your problem soon. **Is that okay?**'
+        pr-message: 'Hi! Thanks for making this change to Wayback :+1: We will get to your changes and review them soon.'
