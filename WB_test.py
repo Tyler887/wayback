@@ -1,5 +1,5 @@
 print("Wayback Machine CLI")
-
+import os
 archive = "https://tyler887.github.io"
 
 print("Calling Wayback Machine request (http)...")
