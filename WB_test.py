@@ -12,19 +12,11 @@ import requests
 
 r = requests.head("https://web.archive.org/save/" + archive) # This saves to the Wayback Machine.
 
-if not r.status_code.startswith("20") and not r.statuscode.startswith("30"): # 20X is OK, 30X is redirect. Other codes are ERRORs.
-
-    print("Archived to Wayback Machine UNSUCCESSFULLY. web.archive.org returned HTTP code " + r.status_code + ".")
 
     
-
-    exit(1)
-
-
-
   
 
-print("Archived to Wayback Machine successfully.")
+print("Archived to Wayback Machine")
 
 
 exit()
