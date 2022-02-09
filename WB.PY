@@ -9,7 +9,7 @@ try:
     print("Archived to Wayback Machine UNSUCCESSFULLY. web.archive.org returned HTTP code " + r.status_code + ".")
     input("Press Enter to exit... ")
     exit(1)
-expect requests.ConnectionError:
+except requests.ConnectionError:
   print("Archived to Wayback Machine UNSUCCESSFULLY. Could not establish a working connection.\nAre you sure that there are no current incidents reported by the the Internet Archive?")
   input("Press Enter to exit... ")
   exit(1)
