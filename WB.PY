@@ -1,4 +1,4 @@
-print("Wayback Machine CLI")
+print("Wayback 1.0, a command line interface for the Wayback Machine")
 archive = input("Input the URL to archive: ")
 print("Calling Wayback Machine request (http)...")
 import requests
